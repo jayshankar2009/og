@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Sort Customer By"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/small" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rd_top_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="TOP CUSTOMERS"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+
+    <RadioButton
+        android:id="@+id/rd_alphabetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:padding="8dp"
+        android:text="ALPHABETIC"
+        android:textColor="@color/ordergenie_gray"
+        android:textSize="@dimen/small" />
+
+    <RadioButton
+        android:id="@+id/rd_recent_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="RECENT ACTIVITY"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/lighter_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:padding="8dp"
+        android:text="FILTER CUSTOMERS"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small" />
+
+
+    <RadioGroup
+        android:id="@+id/rdgroup_filtercustomers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rd_recent_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="RECENT ORDER"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+
+    <RadioButton
+        android:id="@+id/rd_pending_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="PENDING BILL"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+
+    <RadioButton
+        android:id="@+id/rd_newcustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="NEW CUSTOMER"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_linerlayout_border"
+            android:text="CLEAR"
+            android:id="@+id/textview_clear"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_linerlayout_border"
+            android:text="FILTER"
+            android:id="@+id/textview_filter"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

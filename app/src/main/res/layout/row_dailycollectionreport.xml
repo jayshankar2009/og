@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:background="@color/black"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/Cust_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Chemist Name"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small"
+                    />
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/billStatus"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/billStatus"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="Status"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/f_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rl_first"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lighter_gray" />
+
+            <LinearLayout
+                android:id="@+id/lnr_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_line"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/h_order_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Amount Received : "
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small" />
+
+
+                <TextView
+                    android:id="@+id/order_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/h_order_Id"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Rs. 10000"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/small"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/h_orderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_data"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:text="Payment Date : "
+                android:textAppearance="@style/Roboto_thin"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/orderDatee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_data"
+                android:layout_toRightOf="@+id/h_orderDate"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="22"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small"
+                tools:text="23-3-2018" />
+
+
+            <TextView
+                android:id="@+id/h_orderamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_data"
+                android:layout_marginLeft="15dp"
+
+                android:layout_toLeftOf="@+id/orderamount"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Mode: "
+                android:textAppearance="@style/Roboto_thin"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/orderamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lnr_data"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="123"
+                android:textAlignment="center"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small" />
+            <View
+                android:id="@+id/i_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/orderamount"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lighter_gray" />
+
+
+            <LinearLayout
+                android:id="@+id/lnr_invoicedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/i_line"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/h_invoicedata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Invoice No : "
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small" />
+
+
+                <TextView
+                    android:id="@+id/invoicedata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/i_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/h_order_Id"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="12,234,234,34535,3543564,2543646,32536546,325465,253467,3254367,354675,356456,34654675,3467,34567886,5678,46778,4567678"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/small"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <View
+                android:id="@+id/s_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lnr_invoicedata"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lighter_gray" />
+
+            <LinearLayout
+                android:id="@+id/lnr_inv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_line"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/h_invoice_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Bank Name : "
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/row_bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/h_order_Id"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/small"
+                    tools:text="ABC BANK" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/h_invoicedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_inv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Cheque No: "
+                android:textAppearance="@style/Roboto_thin"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/row_chequeno"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_inv"
+                android:layout_toRightOf="@+id/h_invoicedate"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text="22-2-2018"
+                android:textAlignment="center"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/h_invoiceamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_inv"
+                android:layout_marginLeft="15dp"
+
+                android:layout_toLeftOf="@+id/row_chequedate"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Cheque Date: "
+                android:textAppearance="@style/Roboto_thin"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/row_chequedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lnr_inv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small"
+                tools:text="12345678" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

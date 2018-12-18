@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_orderDetailstlist"
+            type="com.synergy.keimed_ordergenie.model.m_orderhistoryitems"/>
+    </data>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/H_Item_Name"
+            tools:text="Item Name"
+            android:text="@{v_orderDetailstlist.item_Name}"
+            android:layout_weight=".4"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textAppearance="@style/Roboto_thin"
+       />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Pack"
+            android:text="@{v_orderDetailstlist.packsize}"
+            android:id="@+id/H_Pack"
+            android:layout_weight=".2"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textSize="@dimen/small"
+            android:textAppearance="@style/Roboto_thin"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/H_Qty"
+            tools:text="Qty"
+            android:text="@{String.valueOf(v_orderDetailstlist.qty)}"
+            android:layout_weight=".2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/small"
+            android:textAppearance="@style/Roboto_thin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/H_mrp"
+            tools:text="MRP"
+            android:maxLength="6"
+            android:gravity="center"
+            android:text='@{String.valueOf(v_orderDetailstlist.MRP!= null ? v_orderDetailstlist.MRP : "0")}'
+            android:layout_weight=".2"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textAppearance="@style/Roboto_thin"
+           />
+    </LinearLayout>
+
+
+
+</layout>

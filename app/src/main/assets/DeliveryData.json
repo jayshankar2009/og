@@ -1,0 +1,111 @@
+[
+  {
+    "ClientID": "1001",
+    "Client_Code": "1001",
+    "Client_Name": "A.V.M.CHEMIST",
+    "Client_Address": "SHOP NO.11 & 15,D.D.A. MARKET,, ANUPAM APP.M.B.ROAD,OPP.SAKET,, NEW DELHI-110 030",
+    "invoice": [
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "Delivered",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN011609000030",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 13
+      },
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "Pending",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN01161109000030",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 14
+      },
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "Pending",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN0116091000030",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 15
+      }
+    ]
+  },
+  {
+    "ClientID": "1002",
+    "Client_Code": "1002",
+    "Client_Name": "20011 - PARMAR MED & GEN STORES",
+    "Client_Address": "MAHAVIR COMPLEX,STATION ROAD, KARJAT, 0, KARJAT",
+    "invoice": [
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "Undelivered",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN011609000000",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 16
+      },
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "Undelivered",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN01160sd9000000",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 17
+      }
+    ]
+  },
+  {
+    "ClientID": "1003",
+    "Client_Code": "1003",
+    "Client_Name": "1 - A B C MEDICAL  SURGICAL CO",
+    "Client_Address": "1,SUPATH BUILDING, VIJAY CHAR RASTA",
+    "invoice": [
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "pending",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN011609000033",
+        "TotalAmount": 950,
+        "TotalItems": 15,
+        "Package_count": 49,
+        "DeliveryId": 18
+      },
+      {
+        "ErpsalesmanID": 121,
+        "DeliveryDate": "2018-05-31",
+        "DeliveryStatus": "pending",
+        "OrderID": null,
+        "InvoiceDate": "2017-04-10T00:00:00.000Z",
+        "InvoiceNo": "OGIN011609000034",
+        "TotalAmount": 850,
+        "TotalItems": 10,
+        "Package_count": 4,
+        "DeliveryId": 19
+      }
+
+    ]
+  }
+]

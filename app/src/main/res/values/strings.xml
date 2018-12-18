@@ -1,0 +1,350 @@
+<resources>
+    <string name="app_name">ORDERCONNECT-ORDER GENIE</string>
+    <string name="title_activity_main">OrderConnect-Order Genie</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="INR">Rs. </string>
+    <string name="action_edit">Edit</string>
+    <string name="order_id">Order Id</string>
+    <string name="activity_inventory">Inventory</string>
+    <string name="forgot_pass">Enter your User Name and New Passowrd will be sent to your registered email id</string>
+    <string name="register_screen"> Quickly Manage your order, sales,payments</string>
+    <string name="location_service">Location Service</string>
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of YOUR_APP_NAME is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+    <item name="key_product_ItemCode" type="id" />
+    <item name="key_product_MfgCode" type="id" />
+    <item name="key_product_Type" type="id" />
+    <item name="key_product_Id" type="id" />
+    <item name="key_product_Name" type="id" />
+    <item name="key_product_Mfg" type="id" />
+    <item name="key_product_Dose" type="id" />
+    <item name="key_product_Pack" type="id" />
+    <item name="key_product_PTR" type="id" />
+    <item name="key_product_MRP" type="id" />
+    <item name="key_product_Scheme" type="id" />
+    <item name="key_product_SubStockist" type="id" />
+    <item name="key_product_BoxSize" type="id" />
+
+    <item name="key_product_halfscheme" type="id" />
+    <item name="key_product_code" type="id" />
+    <item name="key_product_minQ" type="id" />
+    <item name="key_product_maxQ" type="id" />
+    <item name="key_product_stock" type="id" />
+
+    <item name="key_product_percentscheme" type="id" />
+    <item name="key_product_stockscheme" type="id" />
+    <item name="key_product_legendname" type="id" />
+    <item name="key_product_legendcolor" type="id" />
+
+
+    <item name="key_Lnr_second_detail" type="id" />
+    <item name="key_lnr_first_heading" type="id" />
+    <item name="key_stopWatch" type="id" />
+
+
+    <item name="key_call_plan_client_name" type="id" />
+    <item name="key_call_plan_location" type="id" />
+
+
+    <string name="Payment_prompt">Select Payment Method</string>
+
+    <string name="Rs">\u20B9</string>
+
+
+    <string-array name="array_test_temp">
+        <item> Retail Invoice Customer</item>
+        <item>Invoice for Doctor</item>
+        <item>Invoice for Hospital</item>
+        <item>Invoice for Stock Transfer</item>
+        <item>Invoice for Whole Sale</item>
+        <item>Retail Invoice for Medikart Customer</item>
+        <item>Local</item>
+    </string-array>
+
+    <string-array name="array_test_login_type">
+        <item>Stockist</item>
+        <item>Chemist</item>
+
+    </string-array>
+
+    <string-array name="array_customer_list">
+        <item>Blue Green Pharma</item>
+        <item>Balaji Medicals</item>
+
+
+    </string-array>
+
+
+    <string-array name="array_date_list">
+        <item>SAT,25 NOV 2017</item>
+        <item>MON,27 NOV 2017</item>
+
+    </string-array>
+
+
+    <string-array name="array_amount_range1">
+        <item>Start Amount Value</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+
+
+    <string-array name="array_amount_range2">
+        <item>End Amount Value</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
+    </string-array>
+
+
+    <string-array name="Delivery_Option_arrays">
+        <item>Add A Delivery Option</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>Payment Gatways</item>
+
+    </string-array>
+
+
+    <string-array name="Payment_Option_arrays">
+        <item>Select Payment Method</item>
+        <item>Cash Payment</item>
+        <item>Cheque Payment</item>
+
+    </string-array>
+
+    <string-array name="Bank_Names">
+        <item>Bank Name</item>
+        <item>ICIC Bank</item>
+        <item>Indian Bank</item>
+        <item>SBI</item>
+        <item>Dhanlaxmi Bank</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="hint_sign">Get Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
+    <string name="title_activity_chemist_profile">ChemistProfile</string>
+
+
+    <string-array name="Company_names_list">
+        <item>ABHYUDAYA CO-OP BANK LTD</item>
+        <item>ABU DHABI COMMERCIAL BANK</item>
+        <item>AKOLA DISTRICT CENTRAL CO-OPERATIVE BANK</item>
+        <item>AKOLA JANATA COMMERCIAL COOPERATIVE BANK</item>
+        <item>ALLAHABAD BANK</item>
+        <item>ALMORA URBAN CO-OPERATIVE BANK LTD</item>
+        <item>ANDHRA BANK</item>
+        <item>ANDHRA PRAGATHI GRAMEENA BANK</item>
+        <item>APNA SAHAKARI BANK LTD</item>
+        <item>AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED</item>
+        <item>AXIS BANK</item>
+        <item>BANK INTERNASIONAL INDONESIA</item>
+        <item>BANK OF AMERICA</item>
+        <item>BANK OF BAHRAIN AND KUWAIT</item>
+        <item>BANK OF BARODA</item>
+        <item>BANK OF CEYLON</item>
+        <item>BANK OF INDIA</item>
+        <item>BANK OF MAHARASHTRA</item>
+        <item>BANK OF TOKYO-MITSUBISHI UFJ LTD</item>
+        <item>BHARATIYA MAHILA BANK LIMITED</item>
+        <item>BNP PARIBAS</item>
+        <item>CALYON BANK</item>
+        <item>CANARA BANK</item>
+        <item>CAPITAL LOCAL AREA BANK LTD</item>
+        <item>CATHOLIC SYRIAN BANK LTD</item>
+        <item>CENTRAL BANK OF INDIA</item>
+        <item>CHINATRUST COMMERCIAL BANK</item>
+        <item>CITIBANK NA</item>
+        <item>CITIZENCREDIT CO-OPERATIVE BANK LTD</item>
+        <item>CITY UNION BANK LTD</item>
+        <item>COMMONWEALTH BANK OF AUSTRALIA</item>
+        <item>CORPORATION BANK</item>
+        <item>CREDIT SUISSE AG</item>
+        <item>DBS BANK LTD</item>
+        <item>DENA BANK</item>
+        <item>DEUTSCHE BANK</item>
+        <item>DEUTSCHE SECURITIES INDIA PRIVATE LIMITED</item>
+        <item>DEVELOPMENT CREDIT BANK LIMITED</item>
+        <item>DHANLAXMI BANK LTD</item>
+        <item>DOMBIVLI NAGARI SAHAKARI BANK LIMITED</item>
+        <item>FIRSTRAND BANK LIMITED</item>
+        <item>GOPINATH PATIL PARSIK JANATA SAHAKARI BANK LTD</item>
+        <item>GURGAON GRAMIN BANK</item>
+        <item>HDFC BANK LTD</item>
+        <item>HSBC</item>
+        <item>ICICI BANK LTD</item>
+        <item>IDBI BANK LTD</item>
+        <item>IDRBT</item>
+        <item>INDIAN BANK</item>
+        <item>INDIAN OVERSEAS BANK</item>
+        <item>INDUSIND BANK LTD</item>
+        <item>INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED</item>
+        <item>ING VYSYA BANK LTD</item>
+        <item>JALGAON JANATA SAHKARI BANK LTD</item>
+        <item>JANAKALYAN SAHAKARI BANK LTD</item>
+        <item>JANASEVA SAHAKARI BANK (BORIVLI) LTD</item>
+        <item>JANASEVA SAHAKARI BANK LTD. PUNE</item>
+        <item>JANATA SAHAKARI BANK LTD (PUNE)</item>
+        <item>JPMORGAN CHASE BANK N.A</item>
+        <item>KALLAPPANNA AWADE ICH JANATA S BANK</item>
+        <item>KAPOL CO OP BANK</item>
+        <item>KARNATAKA BANK LTD</item>
+        <item>KARNATAKA VIKAS GRAMEENA BANK</item>
+        <item>KARUR VYSYA BANK</item>
+        <item>KOTAK MAHINDRA BANK</item>
+        <item>KURMANCHAL NAGAR SAHKARI BANK LTD</item>
+        <item>MAHANAGAR CO-OP BANK LTD</item>
+        <item>MAHARASHTRA STATE CO OPERATIVE BANK</item>
+        <item>MASHREQBANK PSC</item>
+        <item>MIZUHO CORPORATE BANK LTD</item>
+        <item>MUMBAI DISTRICT CENTRAL CO-OP. BANK LTD.</item>
+        <item>NAGPUR NAGRIK SAHAKARI BANK LTD</item>
+        <item>NATIONAL AUSTRALIA BANK</item>
+        <item>NEW INDIA CO-OPERATIVE BANK LTD.</item>
+        <item>NKGSB CO-OP BANK LTD</item>
+        <item>NORTH MALABAR GRAMIN BANK</item>
+        <item>NUTAN NAGARIK SAHAKARI BANK LTD</item>
+        <item>OMAN INTERNATIONAL BANK SAOG</item>
+        <item>ORIENTAL BANK OF COMMERCE</item>
+        <item>PARSIK JANATA SAHAKARI BANK LTD</item>
+        <item>PRATHAMA BANK</item>
+        <item>PRIME CO OPERATIVE BANK LTD</item>
+        <item>PUNJAB AND MAHARASHTRA CO-OP BANK LTD</item>
+        <item>PUNJAB AND SIND BANK</item>
+        <item>PUNJAB NATIONAL BANK</item>
+        <item>RABOBANK INTERNATIONAL (CCRB)</item>
+        <item>RAJGURUNAGAR SAHAKARI BANK LTD.</item>
+        <item>RAJKOT NAGARIK SAHAKARI BANK LTD</item>
+        <item>RESERVE BANK OF INDIA</item>
+        <item>SHRI CHHATRAPATI RAJARSHI SHAHU URBAN CO-OP BANK LTD</item>
+        <item>SOCIETE GENERALE</item>
+        <item>SOLAPUR JANATA SAHKARI BANK LTD.SOLAPUR</item>
+        <item>SOUTH INDIAN BANK</item>
+        <item>STANDARD CHARTERED BANK</item>
+        <item>STATE BANK OF BIKANER AND JAIPUR</item>
+        <item>STATE BANK OF HYDERABAD</item>
+        <item>STATE BANK OF INDIA</item>
+        <item>STATE BANK OF MAURITIUS LTD</item>
+        <item>STATE BANK OF MYSORE</item>
+        <item>STATE BANK OF PATIALA</item>
+        <item>STATE BANK OF TRAVANCORE</item>
+        <item>SUMITOMO MITSUI BANKING CORPORATION</item>
+        <item>SYNDICATE BANK</item>
+        <item>TAMILNAD MERCANTILE BANK LTD</item>
+        <item>THANE BHARAT SAHAKARI BANK LTD</item>
+        <item>THE A.P. MAHESH CO-OP URBAN BANK LTD</item>
+        <item>THE AHMEDABAD MERCANTILE CO-OPERATIVE BANK LTD</item>
+        <item>THE ANDHRA PRADESH STATE COOP BANK LTD</item>
+        <item>THE BANK OF NOVA SCOTIA</item>
+        <item>THE BANK OF RAJASTHAN LTD</item>
+        <item>THE BHARAT CO-OPERATIVE BANK (MUMBAI) LTD</item>
+        <item>THE COSMOS CO-OPERATIVE BANK LTD</item>
+        <item>THE DELHI STATE COOPERATIVE BANK LTD</item>
+        <item>THE FEDERAL BANK LTD</item>
+        <item>THE GADCHIROLI DISTRICT CENTRAL COOPERATIVE BANK LTD</item>
+        <item>THE GREATER BOMBAY CO-OP. BANK LTD</item>
+        <item>THE GUJARAT STATE CO-OPERATIVE BANK LTD</item>
+        <item>THE JALGAON PEOPLES CO-OP BANK</item>
+        <item>THE JAMMU AND KASHMIR BANK LTD</item>
+        <item>THE KALUPUR COMMERCIAL CO. OP. BANK LTD</item>
+        <item>THE KALYAN JANATA SAHAKARI BANK LTD</item>
+        <item>THE KANGRA CENTRAL CO-OPERATIVE BANK LTD</item>
+        <item>THE KANGRA COOPERATIVE BANK LTD</item>
+        <item>THE KARAD URBAN CO-OP BANK LTD</item>
+        <item>THE KARNATAKA STATE APEX COOP. BANK LTD</item>
+        <item>THE LAKSHMI VILAS BANK LTD</item>
+        <item>THE MEHSANA URBAN COOPERATIVE BANK LTD</item>
+        <item>THE MUNICIPAL CO OPERATIVE BANK LTD MUMBAI</item>
+        <item>THE NAINITAL BANK LIMITED</item>
+        <item>THE NASIK MERCHANTS CO-OP BANK LTD., NASHIK</item>
+        <item>THE RAJASTHAN STATE COOPERATIVE BANK LTD</item>
+        <item>THE RATNAKAR BANK LTD</item>
+        <item>THE ROYAL BANK OF SCOTLAND N.V</item>
+        <item>THE SAHEBRAO DESHMUKH CO-OP. BANK LTD</item>
+        <item>THE SARASWAT CO-OPERATIVE BANK LTD</item>
+        <item>THE SEVA VIKAS CO-OPERATIVE BANK LTD (SVB)</item>
+        <item>THE SHAMRAO VITHAL CO-OPERATIVE BANK LTD</item>
+        <item>THE SURAT DISTRICT CO OPERATIVE BANK LTD</item>
+        <item>THE SURAT PEOPLES CO-OP BANK LTD</item>
+        <item>THE SUTEX CO.OP. BANK LTD</item>
+        <item>THE TAMILNADU STATE APEX COOPERATIVE BANK LIMITED</item>
+        <item>THE THANE DISTRICT CENTRAL CO-OP BANK LTD</item>
+        <item>THE THANE JANATA SAHAKARI BANK LTD</item>
+        <item>THE VARACHHA CO-OP. BANK LTD</item>
+        <item>THE VISHWESHWAR SAHAKARI BANK LTD.,PUNE</item>
+        <item>THE WEST BENGAL STATE COOPERATIVE BANK LTD</item>
+        <item>TJSB SAHAKARI BANK LTD</item>
+        <item>TUMKUR GRAIN MERCHANTS COOPERATIVE BANK LTD</item>
+        <item>UBS AG</item>
+        <item>UCO BANK</item>
+        <item>UNION BANK OF INDIA</item>
+        <item>UNITED BANK OF INDIA</item>
+        <item>UNITED OVERSEAS BANK</item>
+        <item>VASAI VIKAS SAHAKARI BANK LTD</item>
+        <item>VIJAYA BANK</item>
+        <item>WEST BENGAL STATE COOPERATIVE BANK</item>
+        <item>WESTPAC BANKING CORPORATION</item>
+        <item>WOORI BANK</item>
+        <item>YES BANK LTD</item>
+        <item>ZILA SAHKARI BANK LTD GHAZIABAD</item>
+
+    </string-array>
+
+    <string name="create_order_disclaimer">Amount is before tax &amp; discount, will be revised once invoice is generated by distributor.</string>
+
+    <string name="order_details_disclaimer">Amount is inclusive of tax &amp; discount.</string>
+    <string name="update_loc_text">We have detected your current location. Do you want to save it as your store location</string>
+    <string name="update_text">Update Location</string>
+
+    <string-array name="manufacture_name">
+        <item>Manufacturer Name</item>
+
+    </string-array>
+
+    <string-array name="product_category">
+        <item>Product Category</item>
+
+    </string-array>
+
+    <string-array name="product_form">
+        <item>Product Form</item>
+
+    </string-array>
+    <string name="title_activity_salesman_make_payment">SalesmanMakePayment</string>
+    <string name="textSyncFirst">Synchronizing Products&#8230; Please wait&#8230;</string>
+    <string name="textExport">Exporting order&#8230; Please wait&#8230;</string>
+    <string name="textSync">Synchronizing updated products&#8230; Please wait&#8230;</string>
+
+    <string name="enterAmountToPay">Enter amount to pay</string>
+    <string name="enterremarkToPay">Enter Remark to pay</string>
+    <string name="amount">Amount</string>
+    <string name="done">Done</string>
+
+    <string name="enter_min">Search medicine (minimum 3 character)</string>
+</resources>

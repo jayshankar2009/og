@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.synergy.keimed_ordergenie.CustomerFragement_dash
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    >
+
+    <!--  Make order Button -->
+    <Button
+        android:id="@+id/btn_make_order"
+        style="@style/DashboardButton"
+        android:text="Make Order"/>
+
+    <!--  Check update Button -->
+    <Button
+        android:id="@+id/btn_check_updates"
+        style="@style/DashboardButton"
+        android:text="Check Updates"/>
+
+    <!--  Export data Button -->
+    <Button
+        android:id="@+id/btn_export_data"
+        style="@style/DashboardButton"
+        android:text="Export Data"/>
+
+    <!--  Make billAmount Button -->
+    <Button
+        android:id="@+id/btn_payment"
+        style="@style/DashboardButton"
+        android:text="Payment"/>
+
+</com.synergy.keimed_ordergenie.CustomerFragement_dash>

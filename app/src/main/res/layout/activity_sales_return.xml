@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinate"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:background="@color/light_green"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_customercode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textSize="@dimen/small"
+            android:textAppearance="@style/Roboto_thin"
+            android:text="Month"
+            tools:text="Month"/>
+
+        <TextView
+            android:id="@+id/tx_customername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAppearance="@style/Roboto_thin"
+            android:textSize="@dimen/small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Sales"
+            tools:text="Sales"/>
+
+        <TextView
+            android:id="@+id/tx_outstanding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/small"
+            android:textAppearance="@style/Roboto_thin"
+            android:text="Return"
+            tools:text="Return"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/small"
+            android:textAppearance="@style/Roboto_thin"
+            android:text="Return%"
+            tools:text="Return%"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="No data available"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_datalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnr_bottom"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+       />
+
+</LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_showShadow="true"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|end"
+        fab:menu_openDirection="up"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_stockist_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Stockist List" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Pending Bills" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_order"
+            android:layout_width="wrap_content"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/transparent"
+            fab:fab_size="mini"
+
+            fab:fab_label="Orders" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+    </android.support.design.widget.CoordinatorLayout>

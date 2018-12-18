@@ -1,0 +1,33 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_notfic"
+        android:title=""
+        app:actionLayout="@layout/custom_toolbar_dashboard"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <!--<item-->
+        <!--android:id="@+id/action_notification"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title=""-->
+        <!--android:icon="@drawable/bluecircle"-->
+        <!--app:showAsAction="always" />-->
+
+
+    <!--<item-->
+        <!--android:id="@+id/action_setting"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Setting"-->
+        <!--android:icon="@drawable/bluecircle"-->
+        <!--app:showAsAction="never" />-->
+
+
+
+
+
+
+
+</menu>

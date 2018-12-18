@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinate"
+    android:clickable="true"
+    android:background="@color/app_bg"
+    android:focusable="true"
+    tools:context="com.synergy.keimed_ordergenie.activity.CallPlanDetails"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/second_detail_lnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/heading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:text="Call Plan Schedule"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/small"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/btn_show_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:background="@drawable/curve_blue_background"
+                android:drawableLeft="@drawable/route3"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:text="Route Plan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/txt_date_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableTintMode="screen"
+                android:gravity="center"
+                android:text="Sat,21 May 2016"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mini" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_second_heading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/Cust_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="3dp"
+                    android:text="Customer Code : 3148"
+                    android:textSize="@dimen/small"
+                    android:visibility="gone"
+                    tools:text="Customer Code : 3148" />
+
+                <TextView
+                    android:id="@+id/Client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Cust_code"
+                    android:padding="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Normal"
+                    tools:text="Client Name" />
+
+                <TextView
+                    android:id="@+id/Cust_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Client_name"
+                    android:padding="0dp"
+                    android:textSize="@dimen/small"
+                    tools:text="Location" />
+
+                <TextView
+                    android:id="@+id/view_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Cust_adress"
+                    android:padding="0dp"
+                    android:text="View Profile"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/small"
+                    tools:text="View Profile" />
+
+
+                <TextView
+                    android:id="@+id/Pay_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/CallFor_second"
+                    android:padding="2dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/Normal"
+                    android:visibility="gone"
+
+                    tools:text="pay" />
+
+                <TextView
+                    android:id="@+id/CallFor_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/Cust_code"
+                    android:padding="3dp"
+                    android:textSize="@dimen/small"
+                    android:visibility="gone"
+                    tools:text="Call For" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+
+                <!-- <ProgressBar
+                 style="?android:attr/progressBarStyleLarge"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_centerVertical="true"
+                 android:indeterminateDrawable="@drawable/progress"
+                 />-->
+
+
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/timer_progress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/circle_progress"
+                    app:cpb_color="#FFee44"
+                    app:cpb_max_sweep_angle="300"
+                    app:cpb_min_sweep_angle="10"
+                    app:cpb_rotation_speed="1.0"
+                    app:cpb_stroke_width="4dp"
+                    app:cpb_sweep_speed="1.0" />
+
+
+                <TextView
+                    android:id="@+id/call_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@+id/timer_progress"
+                    android:padding="0dp"
+                    android:text="Ongoing Call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small" />
+
+
+                <Chronometer
+                    android:id="@+id/chrono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/call_h"
+                    android:layout_toRightOf="@+id/timer_progress"
+                    android:text="On"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Subnormal" />
+
+                <LinearLayout
+                    android:id="@+id/stop_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/call_start"
+                        android:tint="@color/dark_red"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_call_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/callendImg"
+                        android:text="End Call"
+                        android:textSize="@dimen/Extrasmall"
+                        tools:text="End Call" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/pending_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0/1"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/task_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:text="Task Pending"
+                    android:textColor="@color/button_grey"
+                    android:textSize="@dimen/small" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/take_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textbox_border"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activity_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/order_icon" />
+
+                <LinearLayout
+                    android:id="@+id/lnr_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/activity_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Order"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/button_grey"
+                        android:textSize="@dimen/Extrasmall"
+                        tools:text="Started at 2.20 pm" />
+
+                    <TextView
+                        android:id="@+id/txt_Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/button_grey"
+                        android:textSize="@dimen/Extrasmall"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableLeft="@drawable/tick_icon"
+                    android:drawablePadding="0dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="Start Task"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Task in progress" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collect_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textbox_border"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activity_icon2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rupee_icon" />
+
+                <LinearLayout
+                    android:id="@+id/lnr_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/activity_icon2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Collect Payment"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/cp_txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/button_grey"
+                        android:textSize="@dimen/Extrasmall"
+                        tools:text="Started at 2.20 pm" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cp_txt_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/tick_icon"
+                    android:drawablePadding="0dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="Start Task"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Call Started        " />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Order_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textbox_border"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/activity_icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delivery_icon" />
+
+                <LinearLayout
+                    android:id="@+id/lnr_time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/activity_icon3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/ts_txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/button_grey"
+                        android:textSize="@dimen/Extrasmall"
+                        tools:text="Started at 2.20 pm" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/del_txt_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/tick_icon"
+                    android:drawablePadding="0dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="Start Task"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Call Started        " />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/end_call"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/redbutton"
+                android:drawableLeft="@drawable/end_call"
+                android:padding="5dp"
+                android:text="End Current Call"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- <android.support.v7.widget.RecyclerView android:id="@+id/rv_call_activities"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_height="100dp"
+        android:layout_below="@+id/heading_layout"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2"
+        >
+
+    </android.support.v7.widget.RecyclerView>-->
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+</ScrollView>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chemist_product_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context="com.synergy.keimed_ordergenie.activity.ChemistProductDetail">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/med_image"
+        android:padding="10dp"
+        android:src="@drawable/med"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_mfg_h"
+        android:text="Mfg : "
+        android:layout_below="@+id/med_image"
+        android:textColor="@color/button_grey"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_mfg"
+        android:text="glaxo smith cline"
+        android:layout_toRightOf="@+id/txt_mfg_h"
+        android:layout_below="@+id/med_image"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:id="@+id/first_space"
+        android:layout_below="@+id/txt_mfg"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_dosage_h"
+        android:text="Dosage Form : "
+        android:layout_below="@+id/first_space"
+        android:textColor="@color/button_grey"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_dosage"
+        android:text="glaxo smith cline"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_dosage_h"
+        android:layout_alignBottom="@+id/txt_dosage_h"
+        android:layout_toEndOf="@+id/txt_dosage_h" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_packsize_h"
+        android:text="Pack Size : "
+        android:layout_marginLeft="10dp"
+       android:layout_toRightOf="@+id/txt_dosage"
+        android:layout_below="@+id/first_space"
+        android:textColor="@color/button_grey"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_packsize"
+        android:text="15 ml"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_packsize_h"
+        android:layout_alignBottom="@+id/txt_packsize_h"
+        android:layout_toEndOf="@+id/txt_packsize_h" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp"
+        android:id="@+id/view_line"
+        android:layout_below="@+id/txt_dosage_h"
+        android:background="@color/lighter_gray"
+        ></View>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_ptr_h"
+        android:text="PTR "
+        android:layout_below="@+id/view_line"
+        android:textColor="@color/button_grey"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_ptr"
+        android:text="Rs.150.00"
+        android:layout_below="@+id/txt_ptr_h"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content"
+       />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_mrp_h"
+        android:text="MRP "
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_line"
+        android:textColor="@color/button_grey"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_mrp"
+        android:text="Rs.150.00"
+        android:layout_below="@+id/txt_ptr_h"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/heading_lnr"
+        android:layout_below="@+id/txt_mrp"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Stockist for "
+            android:layout_weight=".15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Extrasmall"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Crocin"
+            android:id="@+id/txt_medicine_name"
+            android:layout_weight=".6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:text="Scheme"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+
+    </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/heading_lnr"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:text="No Stockist Available"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_orderlist"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/heading_lnr"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@+id/txt_product_count"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2"
+        />
+
+
+
+</RelativeLayout>

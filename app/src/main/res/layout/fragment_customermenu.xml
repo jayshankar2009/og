@@ -1,0 +1,50 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <data>
+
+        <variable
+            name="v_menuitems"
+            type="com.synergy.keimed_ordergenie.model.m_menuitems"
+            />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/rl_customermenu"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/customborder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+        <ImageButton
+            android:id="@+id/ib_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_customer"/>
+
+        <TextView
+            android:id="@+id/tx_customerlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/Normal"
+            android:background="@color/light_blue"
+            android:gravity="bottom|center"
+            android:padding="10dp"
+            android:text="Customer List"
+
+            />
+
+
+    </LinearLayout>
+</layout>

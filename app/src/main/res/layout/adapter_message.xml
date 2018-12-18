@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_message_list"
+            type="com.synergy.keimed_ordergenie.model.m_message_list"/>
+    </data>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_item"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            android:id="@+id/main_data_layout"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+
+
+      <!--      <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/med"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_alignTop="@+id/productname" />-->
+
+            <!-- Movie productname -->
+            <TextView
+                android:id="@+id/txt_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:padding="@dimen/_5sdp"
+                tools:Text ="Message Title"
+                android:hint="Stocks Updated"
+                android:text = "@{v_message_list.title}"
+                android:textSize="@dimen/labels_text_size"
+                android:textColor="@color/colorPrimary" />
+              <!--  android:text = "@{v_message_list.title}"
+               android:text = "@{v_message_list.description}"
+              -->
+
+
+            <!-- Movie formName -->
+            <TextView
+                android:id="@+id/txt_messageDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Extrasmall"
+                android:text = "@{v_message_list.description}"
+                android:layout_marginBottom="5dp"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:hint="We have updated the list of stocks in the product category. Have a Look!"
+                android:textColor="@color/ordergenie_gray"
+                android:layout_below="@+id/txt_message_title"
+                 />
+
+
+            <TextView
+                android:id="@+id/txt_messagetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text = "@{v_message_list.message_time}"
+                android:hint = "message time"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/Extrasmall"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_ptr"
+                android:id="@+id/view2"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

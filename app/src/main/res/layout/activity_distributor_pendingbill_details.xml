@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synergy.keimed_ordergenie.activity.DistributorPendingBillDetails">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    android:id="@+id/back_btn"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Id"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/white"
+                        android:id="@+id/txt_custid"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white"
+                        android:text="PRAMOD CHEMIST"
+                        android:id="@+id/txt_title"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:background="@drawable/bluecircle"
+                    android:id="@+id/txt_count"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Bills"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:id="@+id/txt_bills"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/heading_layout"
+        android:background="@color/light_green"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/ord_nostock"
+            android:layout_width="wrap_content"
+            android:text="Pending Bill Details"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+       <!-- <TextView
+            android:layout_weight="1"
+            android:id="@+id/ord_lowstock"
+            android:layout_width="wrap_content"
+            android:text="Low Stock"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/circle"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" /> -->
+
+
+
+
+     <!--   <TextView
+            android:layout_weight="1"
+            android:id="@+id/ord_moderate"
+            android:layout_width="wrap_content"
+            android:text="Moderate"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/moderatecircle"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" /> -->
+
+      <!--  <TextView
+            android:layout_weight="1"
+            android:id="@+id/ord_available"
+            android:layout_width="wrap_content"
+            android:text="Available"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/greencircle"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" /> -->
+<View
+    android:layout_width="65dp"
+    android:layout_height="match_parent"
+    android:visibility="invisible"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/ord_plenty"
+            android:layout_width="wrap_content"
+            android:text="Part Payment Received"
+            android:ellipsize="end"
+
+            android:maxLines="1"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/circle"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/expand_productcatlog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:groupIndicator="@null">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

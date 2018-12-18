@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/light_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/search_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="crocin"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/product_ptr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs."
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small" />
+                </LinearLayout>
+
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/search_pack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/small"
+                        android:text="Pack Size:"
+                        android:layout_weight="1"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/small"
+                        android:layout_weight="1"
+                        android:text="MRP"
+                        android:textColor="@color/colorGreySeperator"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:id="@+id/search_product_mrp"
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="Rs:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/small" />
+
+
+                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+        //this
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qty"
+                        android:textSize="@dimen/small"
+                        android:layout_marginRight="5dp" />
+
+                    <ImageView
+                        android:id="@+id/btn_shop_qtyminus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:orientation="vertical"
+                        android:src="@mipmap/inventory_minus" />
+                    <TextView
+                        android:id="@+id/shop_tablet_qty"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:textIsSelectable="false"
+                        android:textSize="12dp" />
+                    <ImageView
+                        android:id="@+id/btn_shop_qtyplus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:orientation="vertical"
+                        android:src="@mipmap/inventory_plus" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/layout_remove"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove"
+                        android:drawableLeft="@drawable/if_cross_icon"
+                        android:drawablePadding="4dp"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp" />
+
+                </LinearLayout>
+            </LinearLayout> -->
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:gravity="center">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/search_product_option"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:src="@mipmap/menu"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_green"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="0.3" />
+</LinearLayout>
+

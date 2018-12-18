@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <!--<import type="com.synergy.mordergenie.model.m_customerlist" />-->
+    <!--<data>-->
+
+        <!--<variable-->
+            <!--name="v_customerlist"-->
+            <!--type="com.synergy.keimed_ordergenie.model.m_customerlist"/>-->
+
+        <!--&lt;!&ndash;<variable-->
+            <!--name="v_stokiestcustomerlist"-->
+            <!--type="com.synergy.ordergenie.model.m_stokiest_distributor_list"/>&ndash;&gt;-->
+    <!--</data>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_customercode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/SubnormalSamll"
+                android:text="cust code"
+                android:textAppearance="@style/Roboto_thin"
+              />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tx_customername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/SubnormalSamll"
+                    android:text="NA"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxLength="20"
+                    android:textAppearance="@style/Roboto_thin"
+                    tools:text="Customer Name"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tx_drug_expiry"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="@dimen/SubnormalSamll"-->
+                    <!--android:text="Drug Expiry:NA"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textAppearance="@style/Roboto_thin"-->
+                    <!--tools:text="Drug Expiry:"/>-->
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tx_outstanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/SubnormalSamll"
+                android:text=""
+                android:textAppearance="@style/Roboto_thin"
+                tools:text="Amount"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tx_drug_expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/SubnormalSamll"
+            android:text="Drug Expiry:NA"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/Roboto_thin"
+            tools:text="Drug license Expiry Date:NA"/>
+
+    </LinearLayout>
+</LinearLayout>

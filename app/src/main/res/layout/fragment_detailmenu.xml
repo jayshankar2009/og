@@ -1,0 +1,146 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_customer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    android:background="@drawable/customborder">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_customerlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mini"
+                android:textColor="@color/white"
+                android:hint="Customer List"
+
+                />
+
+            <TextView
+                android:id="@+id/tx_customercount_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text="12345"
+                android:textSize="@dimen/Normal"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tx_pendingbills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:hint="Pending Bills"
+                android:textSize="@dimen/mini"
+
+                />
+
+            <TextView
+                android:id="@+id/tx_pendingbills_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:padding="2dp"
+                android:text="12345"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Normal"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tx_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Orders"
+                android:textSize="@dimen/mini"
+
+                />
+
+            <TextView
+                android:id="@+id/tx_orders_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text="0"
+                android:textSize="@dimen/Normal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:hint="Sales"
+                android:gravity="right"
+                android:textSize="@dimen/mini"
+
+                />
+
+            <TextView
+                android:id="@+id/tx_sales_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:text="12345"
+                android:textSize="@dimen/Normal"
+
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tx_returns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:hint="Returns"
+                android:gravity="right"
+                android:textSize="@dimen/mini"
+
+                />
+
+            <TextView
+                android:id="@+id/tx_returns_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text="12345"
+                android:gravity="right"
+                android:textSize="@dimen/Normal"
+
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

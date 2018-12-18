@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_stockistlist"
+            type="com.synergy.keimed_ordergenie.model.m_stockist" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/stockist_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/round_grey" />
+
+                <TextView
+                    android:id="@+id/stockist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stockist_logo"
+                    android:text="@{v_stockistlist.stokist_Name}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small"
+                    tools:text="stockist Name" />
+
+
+                <TextView
+
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_toStartOf="@+id/arrow"
+                    android:text="Request Access"
+                    android:textColor="@color/ordergenie_gray"
+                    android:textSize="@dimen/Extrasmall"
+                    android:visibility="gone"
+                    tools:text="Request Access" />
+
+                <!-- android:text="@{String.valueOf(v_stockistlist.status)}"-->
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/stockist_logo"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lighter_gray"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_cart_count_call_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/status"
+                    android:drawableLeft="@drawable/carto"
+                    android:padding="6dp"
+                    android:text="0" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="1">
+
+             <TextView
+                 android:gravity="center_horizontal"
+                 android:background="@color/colorAccent"
+                 android:textColor="@color/white"
+                 android:id="@+id/textview_take_order"
+                 android:padding="@dimen/_5sdp"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:text="Take Order" />
+
+
+             <TextView
+                 android:gravity="center_horizontal"
+                 android:background="@color/colorAccent"
+                 android:textColor="@color/white"
+                 android:id="@+id/textview_inventory"
+                 android:padding="@dimen/_5sdp"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/_30sdp"
+                 android:layout_weight="0.5"
+                 android:text="Product Catlog" />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@color/lighter_gray"
+                 />
+
+         </LinearLayout>-->
+
+    </LinearLayout>
+
+</layout>

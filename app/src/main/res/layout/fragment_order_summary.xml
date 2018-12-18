@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:background="@color/colorAccent"
+        android:text="Complete Order"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/summary"
+        android:textColor="@color/white"
+        android:text="ORDER SUMMARY"/>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout9"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="bottom"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/cancel_order"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:text="Cancel Order"-->
+            <!--android:textColor="@color/white" />-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@color/white" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/confirm_order"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:text="Complete Order"-->
+            <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:layout_below="@+id/summary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SubnormalSamll" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textColor="@color/black"
+                android:id="@+id/customer_name"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/Normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order ID"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/SubnormalSamll" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OG567904"
+                android:textColor="@color/black"
+                android:id="@+id/order_id"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/Normal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total items in order"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/SubnormalSamll" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/black"
+                android:id="@+id/total_items"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/Normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL AMOUNT"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/SubnormalSamll" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. 9990"
+                android:id="@+id/total_amount"
+                android:background="@drawable/commentedittextborder"
+                android:textColor="@color/black"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/Normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Special Instruction"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/Normal" />
+
+
+            <EditText
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/commentedittextborder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:id="@+id/edit_comment"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+    </RelativeLayout>

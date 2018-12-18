@@ -1,0 +1,17 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="10dp"
+    android:id="@+id/text1"
+    android:text="ffffff"
+    fontPath="Roboto-Regular.ttf"
+    android:gravity="center_vertical"
+    android:textColor="@color/button_grey"
+    android:textSize="@dimen/small"
+    tools:ignore="MissingPrefix"
+    />
+
+
+

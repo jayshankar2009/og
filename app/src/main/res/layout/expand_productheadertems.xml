@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="0.7">
+
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/circular_textview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/capsule"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/heading_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="false"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/tx_distriname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:text="ACAMPTAS333"
+                    android:textAppearance="@style/Roboto_thin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Subnormal" />
+
+
+                <ImageView
+                    android:id="@+id/due_indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:padding="4dp"
+                    android:src="@drawable/circle" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/pharmaname_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTASPHARMA LTD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textview_ptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PTR"
+                android:textSize="12dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_ptr"
+                />
+
+            <TextView
+                android:layout_below="@+id/textview_ptr"
+                android:id="@+id/textview_ptrvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="47.72"
+                android:textSize="12dp"
+                android:textColor="#000000" />
+
+
+            <!--<TextView
+                android:id="@+id/prize_textview"
+                android:layout_width="wrap_content"
+                android:text="PTR"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_height="wrap_content" />-->
+
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/duue_indicator"
+                android:src="@drawable/circle"
+                android:layout_toRightOf="@+id/prize_textview"
+                android:layout_height="wrap_content"
+                android:padding="4dp" />-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="45"/>-->
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

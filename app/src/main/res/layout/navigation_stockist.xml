@@ -1,0 +1,283 @@
+<ScrollView android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+        <include layout="@layout/navheader"
+            />
+ 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_1sdp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/Subnormal"
+                android:id="@+id/txt_heading"
+                android:background="@color/light_blue"
+                android:textColor="@color/colorAccent"
+android:text="Version: "
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/menu"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:layout_below="@+id/txt_heading"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="@dimen/small"
+                    android:background="@drawable/textview_selector"
+                    android:textColor="@color/black"
+                    android:text="My Profile"
+                    android:id="@+id/menu_profile"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/profilo"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="@dimen/small"
+                    android:background="@drawable/textview_selector"
+                    android:textColor="@color/black"
+                    android:text="Change Password"
+                    android:id="@+id/menu_changepassword"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/settingo"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_selector"
+                    android:id="@+id/menu_last10_orders"
+                    android:textSize="@dimen/small"
+                    android:textColor="@color/black"
+                    android:text="Last 10 Orders"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/carto"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textSize="@dimen/small"
+                    android:textColor="@color/black"
+                    android:text="Last 10 Activities"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/active2"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_selector"
+                    android:textSize="@dimen/small"
+                    android:textColor="@color/black"
+                    android:text="Messages"
+                    android:id="@+id/menu_messages"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email2"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_selector"
+                    android:textSize="@dimen/small"
+                    android:textColor="@color/black"
+                    android:text="Show my Location"
+                    android:id="@+id/menu_location"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/nav_placeholder"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+
+                <TextView
+                    android:id="@+id/export_db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_selector"
+                    android:drawableLeft="@drawable/carto"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Export DB"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_selector"
+                    android:textSize="@dimen/small"
+                    android:textColor="@color/black"
+                    android:text="Pending Orders"
+                    android:id="@+id/menu_order"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/carto"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_selector"
+                    android:textSize="@dimen/small"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:text="Settings"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/settingo"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="@dimen/small"
+                    android:background="@drawable/textview_selector"
+                    android:textColor="@color/black"
+                    android:text="Log Out"
+                    android:id="@+id/menu_logout"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/log2"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="20dp" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_5sdp"
+                android:layout_below="@+id/menu"
+                android:textSize="@dimen/mini"
+                android:id="@+id/txt_h_today"
+                android:textColor="@color/colorAccent"
+
+                android:text="Today's Task"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" />
+            <View
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:background="#e7e7e7"
+                android:layout_below="@+id/txt_h_today"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_below="@+id/txt_h_today"
+                android:id="@+id/today_lnr_progress"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:id="@+id/h_target_total"
+                    android:text="3/6 Task is completed"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <ProgressBar
+                    android:visibility="invisible"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/pbr_today_task"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/today_lnr_progress"
+                android:textSize="@dimen/mini"
+                android:id="@+id/txt_h_monthly"
+
+                android:textColor="@color/colorAccent"
+                android:text="Monthly Progress"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" />
+
+
+            <View
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:background="#e7e7e7"
+                android:layout_below="@+id/txt_h_monthly"
+                android:id="@+id/maxyview"
+                android:layout_height="1dp" />
+
+            <fragment
+                android:background="@color/blue"
+                android:layout_below="@+id/maxyview"
+                android:id="@+id/target_statics_fragement"
+                android:name="com.synergy.keimed_ordergenie.fragment.DashboardsalesmanStaticsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/target_statics_fragement"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/mini"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="Target Achieved"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/Normal"
+                    android:id="@+id/txt_target_heading"
+                    android:textColor="@color/colorAccent"
+                    android:text="Rs. 27,300"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

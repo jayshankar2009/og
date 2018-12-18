@@ -1,0 +1,67 @@
+<RelativeLayout
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_customer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    android:id="@+id/h_target_total"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:text="Total Target"
+    android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/target_total"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="275"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/pbr_total_target"
+        android:id="@+id/h_target_achieved"
+        android:text="Target Achieved"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/target_achieved"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbr_total_target"
+        android:text="200/275"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/target_achieved"
+        android:layout_height="20dp"
+        android:id="@+id/pbr_total_achieved"
+        android:layout_marginBottom="10dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/pbr_total_target"
+        android:layout_below="@+id/h_target_total"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnr_nav_header_c"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorAccent"
+    android:gravity="center_vertical"
+
+    android:orientation="horizontal"
+    android:padding="15dp"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <Space
+        android:id="@+id/space_first"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <ImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/space_first"
+        android:gravity="center_vertical"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/genie" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/space_first"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_profile_pic"
+        android:layout_toRightOf="@+id/iv_profile_pic" />
+    <!--
+            android:src="@drawable/avtar3"
+    -->
+
+
+    <TextView
+        android:id="@+id/txt_profile_name_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space_first"
+        android:layout_toRightOf="@+id/space"
+        android:text="Name"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/Normal" />
+
+    <TextView
+        android:id="@+id/txt_profile_email_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_profile_name_c"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/space"
+        android:text="Email ID"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/small">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/space_first"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+       android:textStyle="bold"
+        android:text="Application Version: " />
+
+
+</RelativeLayout>
+

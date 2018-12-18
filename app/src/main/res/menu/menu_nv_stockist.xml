@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/customers"
+        android:title="CUSTOMERS"
+        android:orderInCategory="100"
+        android:icon="@drawable/addcustomer"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/catalog"
+        android:title="PRODUCT CATALOG"
+        android:orderInCategory="100"
+        android:icon="@drawable/pillcapsule"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/orders"
+        android:title="ORDERS"
+        android:orderInCategory="100"
+        android:icon="@drawable/box"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/pendingbill"
+        android:title="PENDING BILLS"
+        android:orderInCategory="100"
+        android:icon="@drawable/location_round_blue_backgroud"
+        />
+
+   <!-- <item
+        android:id="@+id/Chemist_Lastactivity"
+        android:title="Last 10 Activities"
+        android:orderInCategory="100"
+        android:icon="@drawable/active2"
+        app:showAsAction="never"
+        />-->
+
+    <item
+        android:id="@+id/sales"
+        android:title="SALES/RETURNS"
+        android:orderInCategory="100"
+        android:icon="@drawable/cart_icon"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/payment"
+        android:title="PAYMENT"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:icon="@drawable/settingo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/users"
+        android:title="USERS"
+        android:orderInCategory="100"
+        android:icon="@drawable/profile"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/notifications"
+        android:title="NOTIFICATIONS"
+        android:orderInCategory="100"
+        android:icon="@drawable/profile"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/callplan"
+        android:title="CALL PLAN"
+        android:orderInCategory="100"
+        android:icon="@drawable/calendar_icon"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/sto_payment"
+        android:title="PAYMENT"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_rupee"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/track"
+        android:title="TRACK USER ACTIVITY"
+        android:orderInCategory="100"
+        android:icon="@drawable/location_icon"
+        android:visible="false"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/notification"
+        android:title="NOTIFICATIONS"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:icon="@drawable/ring"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/livechat"
+        android:title="LIVE CHAT"
+        android:orderInCategory="100"
+        android:visible="false"
+        android:icon="@drawable/chat_icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/LogOut"
+        android:title="Log Out"
+        android:orderInCategory="100"
+        android:icon="@drawable/logout_icon"
+        app:showAsAction="never"
+        />
+
+</menu>

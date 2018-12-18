@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Quick Overview"
+        android:id="@+id/nav_first_heading">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_CustomerList"
+                    android:title="CustomerList" />
+
+                <item android:id="@+id/nav_Sales"
+                    android:title="Sales" />
+
+                <item android:id="@+id/nav_Bills"
+                    android:title="Pending Bills" />
+                <item android:id="@+id/nav_Order"
+                    android:title="Order" />
+                <item android:id="@+id/nav_Returnr"
+                    android:title="Return" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Target"
+        android:id="@+id/nav_second_heading">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/nav_Target"
+                    android:title="Target Achieved" />
+
+
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Progress">
+        <menu>
+
+            <item android:id="@+id/nav_progress"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Weekly Progress" />
+
+        </menu>
+    </item>
+</menu>

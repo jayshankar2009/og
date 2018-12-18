@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.synergy.keimed_ordergenie.activity.DistributorPayments">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <!-- <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             app:layout_collapseMode="pin"
+             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+ </android.support.v7.widget.Toolbar>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_above="@+id/lnr_bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:id="@+id/heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ord_checkpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:drawableLeft="@drawable/circle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Cheque Payment"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/ord_cashpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:drawableLeft="@drawable/plentycircle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Cash Payment"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_payment"
+        android:layout_below="@+id/heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="vertical" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/totalpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Received payment :"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:textSize="@dimen/Subnormal" />
+
+            <TextView
+                android:id="@+id/total_products"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs:9500"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

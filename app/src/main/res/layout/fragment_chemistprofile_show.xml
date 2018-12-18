@@ -1,0 +1,297 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_first"
+            android:src="@drawable/customer"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_first"
+            android:layout_toRightOf="@+id/img_first"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Customer Name"
+            android:id="@+id/txt_name_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_first"
+            android:layout_toEndOf="@+id/v_first" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/Subnormal"
+            android:id="@+id/txt_name"
+            android:singleLine="true"
+            android:text="Akhil Murli"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_first"
+            android:layout_toEndOf="@+id/v_first" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_second"
+            android:padding="5dp"
+            android:layout_below="@+id/img_first"
+            android:src="@drawable/code"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_second"
+            android:layout_below="@+id/img_first"
+            android:layout_toRightOf="@+id/img_second"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Customer code"
+            android:id="@+id/txt_cus_code_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_second"
+            android:layout_toEndOf="@+id/v_second" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:id="@+id/txt_cus_code"
+            android:text="10001"
+            android:layout_below="@+id/txt_cus_code_heading"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/v_second" />
+
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_third"
+            android:padding="5dp"
+            android:layout_below="@+id/img_second"
+            android:src="@drawable/address"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_third"
+            android:layout_below="@+id/img_second"
+            android:layout_toRightOf="@+id/img_third"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Address"
+            android:id="@+id/txt_cus_address_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_third"
+            android:layout_toEndOf="@+id/v_third" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:id="@+id/txt_cus_address"
+            android:text="thane"
+            android:layout_below="@+id/txt_cus_address_heading"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/v_third" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_forth"
+            android:padding="5dp"
+            android:layout_below="@+id/img_third"
+            android:src="@drawable/email"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_forth"
+            android:layout_below="@+id/img_second"
+            android:layout_toRightOf="@+id/img_third"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Email Address"
+            android:id="@+id/txt_cus_email_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_forth"
+            android:layout_toEndOf="@+id/v_forth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:id="@+id/txt_cus_email"
+            android:text="akhil.m@comflextech.com"
+            android:layout_below="@+id/txt_cus_email_heading"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/v_forth" />
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/img_fifth"
+            android:padding="5dp"
+            android:layout_below="@+id/img_forth"
+            android:src="@drawable/call_start"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_fifth"
+            android:layout_below="@+id/img_forth"
+            android:layout_toRightOf="@+id/img_fifth"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Primary Phone"
+            android:id="@+id/txt_cus_phone_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_fifth"
+            android:layout_toEndOf="@+id/v_fifth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:id="@+id/txt_cus_phone"
+            android:text="8237658967"
+            android:layout_below="@+id/txt_cus_phone_heading"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/v_fifth" />
+
+
+        <View
+            android:layout_width="30dp"
+            android:id="@+id/v_sixth"
+            android:layout_below="@+id/img_fifth"
+            android:layout_toRightOf="@+id/img_sixth"
+            android:layout_height="40dp"/>
+
+
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:text="Outstanding Bill"
+            android:visibility="gone"
+            android:id="@+id/txt_cus_outstanding_heading"
+            android:textColor="@color/button_grey"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_sixth"
+            android:layout_toEndOf="@+id/v_sixth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/small"
+            android:id="@+id/txt_cus_outstanding"
+            android:text="10045.20"
+            android:visibility="gone"
+            android:layout_below="@+id/txt_cus_outstanding_heading"
+            style="@style/TextAppearance.FontPath"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/v_sixth" />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/img_sixth"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favorite_black_24dp"
+                android:id="@+id/img_pending_bills"
+                android:layout_height="80dp" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:src="@drawable/ic_favorite_black_24dp"
+                android:layout_weight="1"
+                android:id="@+id/img_orders"
+                android:layout_height="80dp" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favorite_black_24dp"
+                android:id="@+id/img_sales_return"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+
+   <!--     <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/img_sixth"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@drawable/bill2"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/img_fifth"
+            android:layout_alignStart="@+id/img_fifth" />-->
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

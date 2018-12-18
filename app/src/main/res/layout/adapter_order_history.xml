@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_orderhistory"
+            type="com.synergy.keimed_ordergenie.model.m_orderhistory"/>
+    </data>
+
+    <RelativeLayout    android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:layout_width="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_datalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_margin="10dp"
+        android:elevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice Date"
+                    android:textSize="@dimen/mini"
+                    android:id="@+id/txt_date_h"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="21/12/2016"
+                    android:textColor="@color/black"
+                    android:text="@{v_orderhistory.invoice_Date}"
+                    android:maxLength="10"
+                    android:textSize="@dimen/small"
+                    android:id="@+id/txt_invoice_date"
+                    android:layout_below="@+id/txt_date_h"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice Number"
+                    android:textSize="@dimen/mini"
+                    android:id="@+id/txt_invoice_number_h"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="6545654"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@{String.valueOf(v_orderhistory.OrderNo)}"
+                    android:textSize="@dimen/small"
+                    android:id="@+id/txt_invoice_number"
+                    android:layout_alignTop="@+id/txt_invoice_date"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Items"
+                    android:textSize="@dimen/mini"
+                    android:id="@+id/txt_total_items_h"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="45"
+                    android:text="@{String.valueOf(v_orderhistory.Line_Item_Count)}"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small"
+                    android:id="@+id/txt_total_items"
+                    android:layout_below="@+id/txt_invoice_number_h"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignStart="@+id/txt_total_items_h" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/lighter_gray"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <android.support.v7.widget.RecyclerView android:id="@+id/rv_orderlistitems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                tools:listitem="@android:layout/simple_list_item_2"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                >
+
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Pending Bill"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/bills_icon"
+                    android:text="@{v_orderhistory.Order_Stauts}"
+                    android:textSize="@dimen/small"
+                    android:id="@+id/Order_status"
+                    android:layout_alignBottom="@+id/btn_show_items"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Show Items"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btn_show_items"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:textSize="@dimen/small"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:id="@+id/txt_total_amount_h"
+                    android:padding="1dp"
+                    android:textSize="@dimen/mini"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_total_amount"
+                    tools:text="458723.00"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@{String.valueOf(v_orderhistory.Invoice_Amt)}"
+                    android:textSize="@dimen/small"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/txt_total_amount_h"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>

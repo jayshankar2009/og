@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<import type="com.synergy.ordergenie.model.m_customerlist" />-->
+    <data>
+
+<!--        <variable
+            name="v_customerlist"
+            type="com.synergy.ordergenie.model.m_customerlist"/>-->
+
+        <variable
+            name="v_stokiestcustomerlist"
+            type="com.synergy.keimed_ordergenie.model.m_stokiest_distributor_list"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_customercode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/small"
+                android:text="@{String.valueOf(v_stokiestcustomerlist.Client_Code)}"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Client code"
+                />
+
+            <TextView
+                android:id="@+id/tx_customername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:text="@{String.valueOf(v_stokiestcustomerlist.Client_LegalName)}"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Client Name"/>
+
+
+            <TextView
+                android:id="@+id/tx_outstanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                android:text="Rs.0"
+                tools:text="Amount"
+                android:gravity="center" />
+            <!--android:text='@{@string/INR+String.valueOf(v_customerlist.outstanding_Bill != null ? v_customerlist.outstanding_Bill :"0")}'-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</layout>

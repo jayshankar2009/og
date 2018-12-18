@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="navheader_height">150dp</dimen>
+
+    <dimen name="application_title">40sp</dimen>
+    <dimen name="application_subtitle">15sp</dimen>
+
+    <dimen name="Title">28sp</dimen>
+    <dimen name="subtitle">24sp</dimen>
+    <dimen name="Normal">18sp</dimen>
+    <dimen name="Subnormal">16sp</dimen>
+    <dimen name="SubnormalSamll">14sp</dimen>
+    <dimen name="small">12sp</dimen>
+    <dimen name="vsmall">8sp</dimen>
+    <dimen name="mini">10sp</dimen>
+    <dimen name="smallmini">14sp</dimen>
+    <dimen name="Extrasmall">8sp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="cart_fontsize">14.0sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

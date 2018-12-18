@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_coordinate"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+
+
+
+
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:text="Submitted"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/yellow_small_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Extrasmall"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Processing"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/pink_small_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Extrasmall"
+                android:gravity="center"
+                android:padding="1dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Completed"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/blue_small_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Extrasmall"
+                android:gravity="center"
+                android:padding="1dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Delivered"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/green_small_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Extrasmall"
+                android:gravity="center"
+                android:padding="1dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Not Delivered"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/red_small_diamond"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Extrasmall"
+                android:padding="1dp"
+                android:layout_height="wrap_content" />
+-->
+
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context="com.synergy.keimed_ordergenie.activity.HistoryOrdersActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/layouthead"
+            android:background="@color/light_green"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/H_Cust_Name"
+                android:layout_centerVertical="true"
+                android:text="Customer Name"
+                android:layout_weight=".35"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Cust_Name"
+                android:id="@+id/H_order_Id"
+                android:layout_weight=".15"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_invoiceDate"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/H_billStatus"
+                android:text="Invoice Date"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_invoiceamount"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/H_invoiceDate"
+                android:text="Invoice Amount"
+                android:layout_weight=".25"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"/>
+
+
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:id="@+id/H_billStatus"
+                android:layout_alignParentRight="true"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:id="@+id/layoubottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Submitted"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/yellow_small_diamond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallmini"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Processing"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/pink_small_diamond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallmini"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Completed"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/blue_small_diamond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallmini"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Delivered"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/green_small_diamond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/smallmini"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:id="@+id/text_notdelivered"
+                    android:layout_width="0dp"
+                    android:text="Not Delivered"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/red_small_diamond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small"
+                    android:padding="1dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv_orderlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoubottom"
+            android:layout_above="@+id/lnr_bottom"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/empty_view"
+            android:text="No Orders"
+            android:layout_below="@+id/layouthead"
+            android:layout_above="@+id/lnr_bottom"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/Normal"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:id="@+id/lnr_bottom"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small"
+                android:focusable="false"
+                android:text="Total : "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                tools:text="Total"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/total_count"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small"
+                android:focusable="false"
+                android:text="0 Orders"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="12457 items"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_showShadow="true"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|end"
+        fab:menu_openDirection="up"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_stockist_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Stockist List" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Pending Bills" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_label="Sales/Returns" />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_behavior="com.synergy.keimed_ordergenie.utils.FABScrollBehavior"
+        android:src="@drawable/fab_logout_show"
+        android:background="@drawable/fab_logout_show"
+        app:layout_anchor="@+id/lnr_bottom"
+        app:layout_anchorGravity="right|top"/>
+
+</android.support.design.widget.CoordinatorLayout>

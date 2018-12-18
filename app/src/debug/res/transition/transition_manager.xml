@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition
+        android:fromScene="@layout/activity_profile"
+        android:toScene="@layout/fragment_profile_edit"
+        android:transition="@transition/explode"/>
+    <transition
+        android:fromScene="@layout/activity_profile"
+        android:toScene="@layout/fragment_profile_edit"
+        android:transition="@transition/explode"/>
+</transitionManager>

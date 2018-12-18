@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<data>-->
+
+        <!--<variable-->
+            <!--name="v_stockistlist"-->
+            <!--type="com.synergy.ordergenie.model.m_stockist"/>-->
+    <!--</data>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="NA"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/stockist_logo"
+                android:background="@drawable/circular_textview_drawable"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="stockist Name"
+                    android:textAllCaps="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SubnormalSamll"
+                    android:gravity="left"
+                    android:id="@+id/stockist_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small"
+                    android:padding="@dimen/_2sdp"
+                    tools:text="address"
+                    android:id="@+id/stickist_add"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="new"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pendingbill_yes"
+                android:layout_toLeftOf="@+id/chat"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/icon_rupee"
+                />
+
+            <!-- android:text="@{String.valueOf(v_stockistlist.status)}"-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chat"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/chat_icon"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/lighter_gray"
+            android:layout_below="@+id/stockist_logo"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent" />
+
+</LinearLayout>
+
+
+</layout>

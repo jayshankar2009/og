@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_invoice_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SB1213"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_invoice_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ruppees_textview"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="Rs.500"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_10sdp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

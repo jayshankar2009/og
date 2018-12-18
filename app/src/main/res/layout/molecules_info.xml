@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_main_row_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:text="General Information"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="@dimen/_12sdp"
+        tools:Text="Medicine Informations" />
+
+    <TextView
+        android:id="@+id/emptyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="No Data Available"
+        android:visibility="gone" />
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_product_count"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2" />
+-->
+
+    <ExpandableListView
+        android:groupIndicator="@null"
+        android:id="@+id/rv_info"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+</LinearLayout>

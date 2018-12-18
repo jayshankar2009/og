@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_customerlist"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--tools:listitem="@android:layout/simple_list_item_2">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--Extrasmall-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/light_green"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tx_customercode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Customercode"
+            android:textAppearance="@style/Roboto_thin"
+            android:textSize="@dimen/small"
+            tools:text="Cust Code" />
+
+        <TextView
+            android:id="@+id/tx_customername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Customer Name"
+            android:textAppearance="@style/Roboto_thin"
+            android:textSize="@dimen/small"
+            tools:text="Customer Name" />
+
+        <TextView
+            android:id="@+id/tx_outstanding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Amount"
+            android:textAppearance="@style/Roboto_thin"
+            android:textSize="@dimen/small"
+            tools:text="Amount" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rv_datalist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:text="1,254 items"
+                 android:id="@+id/txt_item_count"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:text="Medium Stock"
+                 android:paddingLeft="5dp"
+                 android:maxLines="1"
+                 android:ellipsize="end"
+                 android:drawableLeft="@drawable/squre_yellow"
+                 android:drawablePadding="5dp"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:text="Low Stock"
+                 android:drawableLeft="@drawable/square_orange"
+                 android:drawablePadding="5dp"
+                 android:maxLines="1"
+                 android:ellipsize="end"
+                 android:paddingLeft="5dp"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:text="No Stock"
+                 android:maxLines="1"
+                 android:ellipsize="end"
+                 android:drawableLeft="@drawable/square_red"
+                 android:drawablePadding="5dp"
+                 android:paddingLeft="5dp"
+                 android:layout_height="wrap_content" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context="com.synergy.keimed_ordergenie.activity.CallPlan">
+
+
+        <RelativeLayout
+            android:id="@+id/heading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Call Plan Schedule"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/btn_show_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:background="@drawable/curve_blue_background"
+                android:drawableLeft="@drawable/route3"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:text="Route Plan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small" />
+
+
+            <TextView
+                android:id="@+id/txt_sel_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/down_arrow"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableTintMode="screen"
+                android:gravity="center"
+                android:text="Sat,21 May 2016"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mini" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+
+            android:id="@+id/rv_callPlanlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading_layout"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/app_bg"
+            tools:listitem="@android:layout/simple_list_item_2">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/emptyview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="No Call Plan available"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

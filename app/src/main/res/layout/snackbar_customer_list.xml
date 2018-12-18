@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_height="45dp">
+
+    <View
+        android:layout_width="15dp"
+        android:id="@+id/frst_view"
+        android:layout_height="45dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/img"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/frst_view"
+        android:src="@drawable/location_icon"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_geo_location"
+        android:textColor="@color/white"
+
+        android:layout_centerVertical="true"
+        android:text="Teenhathnaka"
+      android:layout_toRightOf="@+id/img"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_toLeftOf="@+id/txt_logout"
+        android:background="@color/white"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/txt_logout"
+        android:textSize="14sp"
+        android:text="Logout"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

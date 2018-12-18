@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+
+    android:id="@+id/main_coordinate"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        tools:context="com.synergy.keimed_ordergenie.activity.DistributorNotificationActivity">
+
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnr_bottom"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/empty_view"
+            android:text="No Notifications"
+            android:layout_below="@+id/layouthead"
+            android:layout_above="@+id/lnr_bottom"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/Normal"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+  <!--  <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_showShadow="true"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|end"
+        fab:menu_openDirection="up"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_stockist_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Stockist List" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_label="Pending Bills" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_order"
+            android:layout_width="wrap_content"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/transparent"
+            fab:fab_size="mini"
+
+            fab:fab_label="Orders" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_label="Sales/Returns" />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>-->
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,273 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:fadeScrollbars="true"
+    android:scrollbarSize="0dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/genie"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:text="Welcome,"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/tx_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:text=" Demo user"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@color/colorAccent"
+                    android:elevation="10dp"
+                    android:src="@drawable/search_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search products" />
+
+            </LinearLayout>
+
+            <Space
+                android:id="@+id/sp_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="10dp"
+                    android:gravity="center" />
+
+                <com.synergy.keimed_ordergenie.utils.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:background="@drawable/medicines_inventory_temp"-->
+                <!--android:id="@+id/view_page"/>-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ib_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/medicines_inventory_temp"/>-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <fragment
+                    android:id="@+id/stockist_fragment"
+                    android:name="com.synergy.keimed_ordergenie.fragment.DashboardstockistlistmenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_stockistlistmenu" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black" />
+
+                <fragment
+                    android:id="@+id/order_fragement"
+                    android:name="com.synergy.keimed_ordergenie.fragment.DashboardviewallordermenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    tools:layout="@layout/fragment_updated_showallorder" />
+                <!-- tools:layout="@layout/fragment_showallordermenu"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/product_catlog_fragment"
+                    android:name="com.synergy.keimed_ordergenie.fragment.DashboardproductmenuFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_productsmenu" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_margin="1dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/products_fragment"
+                    android:name="com.synergy.keimed_ordergenie.fragment.DashboardproductsmenuFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_productsmenu" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_margin="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/pending_fragment"
+                    android:name="com.synergy.keimed_ordergenie.fragment.DashboardpendingbillmenuFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_pendingbillmenu" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <fragment
+                        android:id="@+id/pending_fragment"
+                        android:name="com.synergy.keimed_ordergenie.fragment.DashboardpendingbillmenuFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout="@layout/fragment_pendingbillmenu" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <fragment
+                        android:id="@+id/salesreturn_fragment"
+                        android:name="com.synergy.keimed_ordergenie.fragment.DashboardsalesreturnmenuFragement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        tools:layout="@layout/fragment_salesreturnmenu" />
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="10dp" />
+
+
+                </LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

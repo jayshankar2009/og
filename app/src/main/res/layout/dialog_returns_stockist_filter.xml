@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="180dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="FILTER RETURNS BY CHEMISTS"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbox_border"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/chemist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="left|center"
+        android:hint="CHEMIST NAME"
+        android:padding="8dp"
+        android:entries="@array/array_date_list"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/lighter_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="FILTER RETURNS BY DATE"
+        android:padding="8dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbox_border"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center"
+        android:hint="Start Date"
+        android:padding="8dp"
+        android:entries="@array/array_date_list"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbox_border"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:gravity="center"
+        android:hint="End Date"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:entries="@array/array_date_list"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/small" />
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/lighter_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="FILTER RETURNS BY RETURN TYPE"
+        android:padding="8dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioReturn">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:hint="BREAKAGE"
+        android:padding="8dp"
+        android:id="@+id/chk_breakage"
+        android:gravity="left|center"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textSize="@dimen/small"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:hint="EXPIRY"
+        android:padding="8dp"
+        android:id="@+id/chk_expiry"
+        android:gravity="left|center"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textSize="@dimen/small"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:hint="NON MOVING"
+        android:padding="8dp"
+        android:id="@+id/chk_non_moving"
+        android:gravity="left|center"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textSize="@dimen/small"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:hint="OTHERS SPECIFY"
+        android:padding="8dp"
+        android:id="@+id/chk_others"
+        android:gravity="left|center"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textSize="@dimen/small"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_linerlayout_border"
+            android:text="CLEAR"
+            android:id="@+id/btn_clear"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_linerlayout_border"
+            android:text="FILTER"
+            android:id="@+id/btn_filter"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

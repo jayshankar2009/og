@@ -1,0 +1,50 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DistributorPendingBillDetails">
+ <!--   <item
+        android:id="@+id/action_settings"
+        android:title="SACHIN PHARMA"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        /> -->
+
+
+   <!-- <item
+        android:id="@+id/action_bills"
+        android:orderInCategory="100"
+        android:title="3"
+        android:icon="@drawable/bluecircle"
+        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/action_billcount"
+        android:title="33"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/action_text"
+        android:title="BILLS"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        />
+
+    <!--<item-->
+        <!--android:id="@+id/action_add"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title=""-->
+        <!--android:visible="false"-->
+        <!--android:icon="@drawable/add_icon"-->
+        <!--app:showAsAction="always" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_location"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:visible="false"-->
+        <!--android:title="Show my location"-->
+        <!--app:showAsAction="never" />-->
+
+
+
+</menu>

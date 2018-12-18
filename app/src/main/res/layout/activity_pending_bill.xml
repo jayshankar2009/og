@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rv_datalist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnr_bottom"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2" />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="No pending bills"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/lnr_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Paid"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_paid_h"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Normal"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Balance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/txt_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:id="@+id/bottom_sheet"
+          android:background="@color/lighter_gray"
+          android:orientation="vertical"
+          android:paddingLeft="25dp"
+          android:paddingRight="25dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/Normal"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:maxLines="1"
+              android:background="@color/colorAccent"
+              android:padding="10dp"
+              android:textColor="@color/white"
+              android:text="Filters"
+              tools:text="Filters"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/small"
+              android:ellipsize="end"
+              android:maxLines="1"
+              android:paddingTop="5dp"
+              android:textColor="@color/button_grey"
+              android:text="Start Date : "
+              android:textAppearance="@style/TextViewCustomFont"
+              tools:text="Start Date : "/>
+          <EditText
+              android:layout_width="match_parent"
+              android:inputType="date"
+              android:id="@+id/edt_start_date"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/small"
+              android:ellipsize="end"
+              android:maxLines="1"
+              android:textColor="@color/button_grey"
+              android:text="End Date : "
+              android:textAppearance="@style/TextViewCustomFont"
+              tools:text="End Date : "/>
+          <EditText
+              android:layout_width="match_parent"
+              android:inputType="date"
+              android:id="@+id/edt_end_date"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/small"
+              android:ellipsize="end"
+              android:layout_marginTop="5dp"
+              android:maxLines="1"
+              android:textColor="@color/button_grey"
+              android:text="Show Orders By:"
+              android:textAppearance="@style/TextViewCustomFont"
+              tools:text="Show Orders By:"/>
+
+          <RadioGroup
+              android:layout_width="match_parent"
+              android:padding="5dp"
+              android:layout_height="wrap_content">
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:drawablePadding="5dp"
+                  android:text="Show All Bills"
+                  android:drawableRight="@drawable/ic_bookmark_border_black_24dp"
+                  android:layout_height="wrap_content" />
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:text="Show Pending Bills"
+                  android:drawablePadding="5dp"
+                  android:drawableRight="@drawable/ic_bookmark_border_black_24dp"
+                  android:layout_height="wrap_content" />
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:text="Show Pending Cheques"
+                  android:drawablePadding="5dp"
+                  android:drawableRight="@drawable/ic_bookmark_border_black_24dp"
+                  android:layout_height="wrap_content" />
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/lighter_gray"
+                  />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+                  <Button
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="CLEAR"
+                      android:background="@color/white"
+                      android:layout_height="wrap_content" />
+                  <View
+                      android:layout_width="1dp"
+                      android:layout_height="35dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@color/lighter_gray"
+                      />
+                  <Button
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="FILTER"
+                      android:textColor="@color/colorAccent"
+                      android:background="@color/white"
+                      android:layout_height="wrap_content" />
+              </LinearLayout>
+
+          </RadioGroup>
+
+
+      </LinearLayout>-->
+</android.support.design.widget.CoordinatorLayout>

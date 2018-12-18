@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:background="@color/light_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:id="@+id/txt_customer"
+            android:layout_height="wrap_content"
+            android:text="AK Pharma Davangere"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <RadioButton
+                android:textSize="@dimen/_8sdp"
+                android:id="@+id/chk_saleable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="saleable returns"
+                android:textAllCaps="true"/>
+
+            <RadioButton
+                android:textSize="@dimen/_8sdp"
+                android:id="@+id/chk_nonsaleable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="non-saleable returns"
+                android:textAllCaps="true"/>
+
+
+        </RadioGroup>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/rl_search"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <com.synergy.keimed_ordergenie.utils.CustomAutoCompleteView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/light_green"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="7dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="Search a medicine"
+                android:maxLines="1"
+                android:padding="7dp"
+                android:singleLine="true" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ritemslayout"
+        android:weightSum="1"
+        android:padding="@dimen/_10sdp"
+        android:layout_below="@+id/layout1"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Return items"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="true"/>
+
+
+        <TextView
+            android:drawableLeft="@drawable/add_circular_button"
+            android:layout_weight="0.5"
+            android:drawablePadding="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:id="@+id/add_row"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Add new item to return"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ritemslayout"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/request_return"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View
+            android:id="@+id/centerView2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@color/lighter_gray"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/recyclerview"
+            android:text="No Item To Return"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/btomlayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/request_return"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:text="GENERATE RETURN REQUEST"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:textColor="@color/white" />-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <Button
+        android:id="@+id/request_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:background="@color/colorAccent"
+        android:text="GENERATE RETURN REQUEST"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

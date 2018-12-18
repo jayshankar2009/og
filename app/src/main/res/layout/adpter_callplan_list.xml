@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_callplanlist"
+            type="com.synergy.keimed_ordergenie.model.m_callplans" />
+    </data>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:animateLayoutChanges="true"
+        android:elevation="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnrClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_first_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:background="@color/white"
+                android:padding="2dp">
+
+
+                <TextView
+                    android:id="@+id/Client_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:padding="3dp"
+                    android:text="@{v_callplanlist.client_LegalName}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Subnormal"
+                    tools:text="Client Name" />
+
+                <TextView
+                    android:id="@+id/Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Client_Name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="@{v_callplanlist.clientLocation}"
+                    android:textSize="@dimen/mini"
+                    tools:text="Location" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_take_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/order_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Order"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Take Order" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/rupee_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Collect Paymnet"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Collection" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/delivery_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textSize="@dimen/Extrasmall"
+                    tools:text="Delivery" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:id="@+id/call_plan_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Location"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/callstartImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/call_start" />
+
+        <TextView
+            android:id="@+id/callstartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callstartImg"
+            android:padding="5dp"
+            android:text="Start Call"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            tools:text="Start Call" />
+
+        <ImageView
+            android:id="@+id/partylock"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/lock" />
+        <TextView
+            android:id="@+id/call_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callstartImg"
+            android:padding="5dp"
+            android:text="- 45 Min"
+            android:textSize="11sp"
+            android:visibility="gone"
+            tools:text="- 45 Min" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_cart_call_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Location"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/call_plan_start"
+        android:layout_toRightOf="@+id/call_plan_start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carto" />
+
+        <TextView
+            android:id="@+id/txt_cart_count_call_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/green_dshade"
+            android:paddingBottom="2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp"
+            android:text="0"
+            android:textSize="13sp" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/txtCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:background="@drawable/customborder"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:padding="8dp"/>
+<TextView
+    android:id="@+id/txtPaste"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Paste"
+    android:visibility="gone"
+    android:padding="8dp"
+    android:textSize="12sp"
+    android:background="@drawable/customborder"
+    android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

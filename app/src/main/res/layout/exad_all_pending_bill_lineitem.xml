@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<import type="com.synergy.ordergenie.model.m_customerlist" />-->
+    <data>
+
+        <variable
+            name="v_pendingbills_line_item"
+            type="com.synergy.keimed_ordergenie.model.m_all_pending_list_line_items" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_datalist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:elevation="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Invoice date"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini"
+                            tools:text="Invoice date" />
+
+                        <TextView
+                            android:text="@{String.valueOf(v_pendingbills_line_item.invoicedate)}"
+                            android:id="@+id/tx_invoicedate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textSize="@dimen/small"
+                            tools:text="@{String.valueOf(v_pendingbills_line_item.invoicedate)}" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tx_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Invoice No"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini"
+                            tools:text="Invoice No" />
+
+                        <TextView
+                            android:id="@+id/tx_invoiceno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{String.valueOf(v_pendingbills_line_item.invoiceno)}"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textSize="@dimen/small"
+                            tools:text="Invoice No" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tx_totalitems"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total Items"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini"
+                            tools:text="Total Items" />
+
+                        <TextView
+                            android:id="@+id/tx_stock"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/circleorgbtn"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@{String.valueOf(v_pendingbills_line_item.totalitems)}"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/Subnormal"
+                            tools:text="42" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lighter_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Cash Recieved"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini" />
+
+                        <TextView
+                            android:id="@+id/tx_Billamt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{String.valueOf(v_pendingbills_line_item.paymentreceived)}"
+                            android:textAppearance="@style/Roboto_thin"
+                            android:textSize="@dimen/small"
+                            tools:text="Bill Amount" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Total Amount : "
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/mini" />
+
+
+                        <TextView
+                            android:id="@+id/tx_received"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@{String.valueOf(v_pendingbills_line_item.billamount)}"
+                            android:textAppearance="@style/Roboto_thin"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/small"
+                            tools:text="Received" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Due Amount"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini" />
+
+
+                        <TextView
+                            android:id="@+id/tx_due_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+
+                            android:maxLines="1"
+                            android:text="@{String.valueOf(v_pendingbills_line_item.balanceamt)}"
+                            android:textAppearance="@style/Roboto_thin"
+                            android:textSize="@dimen/small"
+                            tools:text="Due Date" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Days"
+                            android:textAppearance="@style/TextViewCustomFont"
+                            android:textColor="@color/button_grey"
+                            android:textSize="@dimen/mini" />
+
+
+                        <TextView
+                            android:id="@+id/tx_day_du"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+
+                            android:maxLines="1"
+                            android:textAppearance="@style/Roboto_thin"
+                            android:textSize="@dimen/small"
+                            tools:text="Due Date" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>

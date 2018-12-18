@@ -1,0 +1,52 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DistributorCustomerList">
+
+    <!--<item-->
+        <!--android:id="@+id/stockist_logo"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="SP"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@drawable/bluecircle"/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:title="SACHIN PHARMA"-->
+        <!--app:showAsAction="always"-->
+        <!--android:orderInCategory="100"-->
+        <!--/>-->
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/search_icon"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/filter"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_add"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title=""-->
+        <!--android:visible="false"-->
+        <!--android:icon="@drawable/add_icon"-->
+        <!--app:showAsAction="always" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_location"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:visible="false"-->
+        <!--android:title="Show my location"-->
+        <!--app:showAsAction="never" />-->
+
+
+
+</menu>

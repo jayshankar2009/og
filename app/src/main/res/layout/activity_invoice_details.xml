@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    android:id="@+id/main_coordinate"
+    android:clickable="true"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:layout_behavior="com.synergy.keimed_ordergenie.utils.FABScrollBehavior"
+        android:src="@drawable/order_icon"
+        app:layout_anchor="@+id/lnr_bottom"
+        app:layout_anchorGravity="right|top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context="com.synergy.keimed_ordergenie.activity.Order_details">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutfirst"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small"
+                android:id="@+id/lbl_order_Id"
+                android:text="Order Id"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Normal"
+                android:id="@+id/order_Id"
+                android:layout_below="@+id/lbl_order_Id"
+                android:text=""
+                tools:text="17088"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small"
+                android:id="@+id/lbl_invoice_Id"
+                android:text="Invoice Number"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Normal"
+                android:id="@+id/invoice_Id"
+                android:layout_below="@+id/lbl_invoice_Id"
+                android:text=""
+                tools:text="17088"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small"
+                android:id="@+id/lbl_Invdate"
+                android:text=" Date"
+                android:layout_alignParentRight="true"/>
+
+
+            <TextView
+                android:maxLength="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Normal"
+                android:id="@+id/Invdate"
+                android:layout_below="@+id/lbl_Invdate"
+                android:text=""
+                tools:text="12/12/2011"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_below="@+id/layoutfirst"
+            android:id="@+id/layouthead"
+            android:background="@color/light_green"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_Item_Name"
+                android:text="Item Name"
+                android:layout_weight=".4"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="left"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pack"
+                android:id="@+id/H_Pack"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_Qty"
+                android:text="Qty"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_pack"
+                android:text="Pack"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_qty"
+                android:text="Qty"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/H_mrp"
+                android:text="MRP"
+                android:layout_weight=".2"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textAppearance="@style/Roboto_thin"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_orderDetailslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layouthead"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <TextView
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:id="@+id/empty_vieww"
+            android:text="@string/order_details_disclaimer"
+            android:layout_below="@+id/layouthead"
+            android:layout_above="@+id/lnr_bottom"
+            android:gravity="bottom"
+            android:textSize="@dimen/Subnormal"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:id="@+id/empty_vview"
+             android:text="No Orders"
+             android:layout_below="@+id/layouthead"
+             android:layout_above="@+id/layoutt"
+             android:gravity="center"
+             android:visibility="gone"
+             android:textSize="@dimen/Normal"
+             android:layout_height="wrap_content" />
+ -->
+
+        <LinearLayout
+            android:id="@+id/layoutt"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mini"
+                    android:focusable="false"
+                    android:text="Total Items"
+                    tools:text="Total Items"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:background="@drawable/round_grey"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small"
+                    android:focusable="false"
+                    android:text="18"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_toEndOf="@+id/textView"
+                    android:id="@+id/textView2"
+                    android:gravity="center_vertical|center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginTop="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mini"
+                    android:focusable="false"
+                    android:text="Invoice Amount"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="Invoice Amount"
+                    android:id="@+id/inv_heading"
+
+                    android:layout_toRightOf="@+id/textView2" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Normal"
+                    android:focusable="false"
+                    android:text="Rs.7800.00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="Rs.47800.00"
+                    android:id="@+id/inv_amount"
+                    android:layout_below="@+id/inv_heading"
+                    android:layout_toRightOf="@+id/textView2" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mini"
+                    android:focusable="false"
+                    android:text="Balance Amount"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="Balance Amount"
+                    android:id="@+id/bal_heading"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Normal"
+                    android:focusable="false"
+                    android:text="Rs.3000.00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    tools:text="Rs.3000.00"
+                    android:id="@+id/bal_amount"
+                    android:layout_below="@+id/bal_heading"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:id="@+id/txt_payment"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/right_arrow_grey"
+                    android:textSize="@dimen/Normal"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/bal_amount"
+                    android:text="@string/Rs"
+                    android:layout_height="40dp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_above="@+id/lnr_bottom"
+            android:id="@+id/text_discc"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_below="@+id/rv_orderDetailslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details_disclaimer"
+            android:textColor="@color/light_green"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lnr_bottom"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Total items"
+                    android:textColor="@color/lighter_gray"
+                    android:textSize="@dimen/Extrasmall"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0 products"
+                    android:id="@+id/product_count"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+             android:layout_margin="5dp"
+                android:background="@color/white"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Invoice Amount"
+                    android:textColor="@color/lighter_gray"
+                    android:textSize="@dimen/Extrasmall"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Rs.14500.00"
+                    android:gravity="center"
+                    android:id="@+id/invoice_amount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

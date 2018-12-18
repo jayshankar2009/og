@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="serif"
+            android:text="Edit Quantity"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_close_dialog"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="3dp"
+            android:src="@drawable/close2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_item_name_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt_item_ptr_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_minus_dialog"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ligh_green_border"
+            android:clickable="true"
+            android:padding="2dp"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Normal" />
+
+        <EditText
+            android:id="@+id/edt_quantity_dialog"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/textbox_border"
+            android:gravity="center"
+            android:inputType="number"
+            android:text=" "
+            android:textSize="@dimen/Normal" />
+
+        <Button
+            android:id="@+id/btn_plus_dialog"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ligh_green_border"
+            android:clickable="true"
+            android:padding="2dp"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Normal" />
+
+        <Button
+            android:id="@+id/btn_done_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/LinearLayout15"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/LinearLayout15"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:fontFamily="serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

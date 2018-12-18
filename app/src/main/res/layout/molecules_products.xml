@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/activity_main_row_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginBottom="5dp"
+        android:textColor="?attr/colorPrimary"
+        android:text = "Medicines containing this Molecule"
+        tools:Text ="Medicines containing this Molecule"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/emptyview"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:text="No Data Available"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_product_count"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2"
+        />
+
+</LinearLayout>

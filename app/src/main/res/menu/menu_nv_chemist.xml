@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/Chemist_MyProfile"
+        android:title="My Profile"
+        android:orderInCategory="100"
+        android:icon="@drawable/profilo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Chemist_ChangePassword"
+        android:title="Change Password"
+        android:orderInCategory="100"
+        android:icon="@drawable/settingo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Chemist_Lastorders"
+        android:title="Last 10 Orders"
+        android:orderInCategory="100"
+        android:icon="@drawable/carto"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Chemist_location"
+        android:title="Show my Location"
+        android:orderInCategory="100"
+        android:icon="@drawable/location_round_blue_backgroud"
+        app:showAsAction="never"
+        />
+
+   <!-- <item
+        android:id="@+id/Chemist_Lastactivity"
+        android:title="Last 10 Activities"
+        android:orderInCategory="100"
+        android:icon="@drawable/active2"
+        app:showAsAction="never"
+        />-->
+
+    <item
+        android:id="@+id/Chemist_Messages"
+        android:title="Messages"
+        android:orderInCategory="100"
+        android:icon="@drawable/email2"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Chemist_Settings"
+        android:title="Settings"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:icon="@drawable/settingo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Chemist_LogOut"
+        android:title="Log Out"
+        android:orderInCategory="100"
+        android:icon="@drawable/log2"
+        app:showAsAction="never"
+        />
+
+</menu>

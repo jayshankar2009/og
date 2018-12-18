@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ordergenie_gray"
+        android:textColor="@color/blue"
+        android:layout_gravity="bottom"
+        android:text="prakash k "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/_company"
+        android:background="@color/ordergenie_gray"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_gravity="top"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quick Overview"
+        android:id="@+id/_linecompany"
+        android:textAlignment="center"
+        android:layout_gravity="top"
+        />
+
+</LinearLayout>

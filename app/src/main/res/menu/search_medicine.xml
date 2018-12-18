@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".buymain">
+
+    <item android:id="@+id/action_search"
+        android:title="Search Medicine"
+        android:icon="@drawable/search_white"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+
+
+
+</menu>

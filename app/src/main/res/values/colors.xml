@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#009444</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="ordergenie_gray">#808080</color>
+    <color name="ordergenie_white">#00796B</color>
+    <color name="light_blue">#d0ebfa</color>
+    <color name="light_green">#e4f1db</color>
+
+    <color name="green_shade">#F2F9F2</color>
+    <color name="green_dshade">#E1F2E2</color>
+
+    <color name="color_pink">#960c8d</color>
+    <color name="dark_bluee">#1d1267</color>
+    <color name="light_grey">#F3F1F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_blue">#0c78a9</color>
+    <color name="black">#000000</color>
+    <color name="blue">#00fffb</color>
+    <color name="text_blue">#61A8C6</color>
+    <color name="dark_orange">#be5b0f</color>
+    <color name="button_grey">#757575</color>
+    <color name="button_purple">#960c8d</color>
+    <color name="dark_red">#ec173e</color>
+    <color name="dark_orang">#ea5e23</color>
+   <!-- <color name="icon_grey">#7E8387</color>-->
+    <color name="lighter_gray">#e6e6ec</color>
+    <color name="app_bg">#ebeef2</color>
+</resources>

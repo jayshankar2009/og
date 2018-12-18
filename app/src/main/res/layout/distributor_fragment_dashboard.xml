@@ -1,0 +1,483 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="true"
+    android:fillViewport="true"
+    android:scrollbarSize="0dp">
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:padding="5dp"
+               android:gravity="center"
+               android:layout_height="wrap_content">
+    android:layout_marginBottom="5dp"
+           android:padding="5dp"
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:padding="2dp"
+                   android:text="Welcome,"
+                   android:textSize="@dimen/small"
+                   android:id="@+id/textView4" />
+
+               <TextView
+                   android:id="@+id/tx_username"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:padding="2dp"
+                   android:textColor="@color/colorPrimary"
+                   android:text=" Demo user"
+                   android:textSize="@dimen/small"/>
+           </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+        <!--   testing tab -->
+        <LinearLayout
+            android:id="@+id/lnr_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_Day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textview_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAY"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textview_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEEK"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textview_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--   testing tab -->
+        <View
+            android:id="@+id/sp_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@color/ordergenie_gray" />
+
+        <LinearLayout
+            android:id="@+id/LL_Graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <fragment
+                android:id="@+id/averagevalue_fragement"
+                android:name="com.synergy.keimed_ordergenie.fragment.DashboardaveragevaluemenuFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                tools:layout="@layout/fragment_averagevalue" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_height="wrap_content"
+             >
+
+             <android.support.v4.view.ViewPager
+                 android:elevation="10dp"
+                 android:layout_margin="5dp"
+                 android:background="@color/white"
+                 android:id="@+id/view_pager"
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp" />
+
+
+             <com.synergy.ordergenie.utils.CirclePageIndicator
+                 android:id="@+id/indicator"
+                 android:layout_margin="5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 />
+
+         </LinearLayout> -->
+
+
+        <LinearLayout
+            android:id="@+id/LL_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <fragment
+                android:id="@+id/received_order_fragment"
+                android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_receivedorderlistmenuFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout="@layout/fragment_received_orderlistmenu" />
+
+            <fragment
+                android:id="@+id/sales_generated_fragement"
+                android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_salegeneratedlistmenuFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                tools:layout="@layout/fragment_sales_generated" />
+            <!-- tools:layout="@layout/fragment_showallordermenu"-->
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/LL_top1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<Space-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@android:color/black"/>-->
+
+            <fragment
+                android:id="@+id/sales_return_fragment"
+                android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_salereturnlistmenuFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout="@layout/fragment_sales_returnlistmenu" />
+
+            <fragment
+                android:id="@+id/pending_bills_distributor_fragment"
+                android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_pendingbilllistmenuFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:layout="@layout/fragment_pending_bills_distributor" />
+            <!-- tools:layout="@layout/fragment_showallordermenu"-->
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue"
+                android:orientation="vertical">
+
+                <!--
+
+                   <fragment
+                       android:id="@+id/pending_fragment"
+                       android:layout_width="match_parent"
+                       android:name="com.synergy.ordergenie.fragment.DashboardpendingbillmenuFragment"
+                       tools:layout="@layout/fragment_pendingbillmenu"
+                       android:layout_height="wrap_content"/> -->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="3dp"
+                    android:text="TOP SKU'S"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/Subnormal" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_topsku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="3dp"
+                    android:text="TOP CUSTOMERS"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/Subnormal" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_topcustomers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:scrollbars="none">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_dshade"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+
+                <!--      <fragment
+                        android:id="@+id/pending_fragment1"
+                        android:name="com.synergy.ordergenie.fragment.DashboardpendingbillmenuFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout="@layout/fragment_pendingbillmenu"/> -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="3dp"
+                    android:text="USER ACTIVITY SUMMARY"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/Subnormal" />
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="13dp"
+                    android:progressDrawable="@drawable/custom_progress" />
+                <!--   android:max="100"
+                android:progress="60"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tx_completedtask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="NA Task Completed"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/Subnormal" />
+
+                    <Space
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/Subnormal" />
+
+                    <TextView
+                        android:id="@+id/tx_totaltask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|right"
+                        android:text="Total NA"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/Subnormal" />
+                </LinearLayout>
+                <!--custom progress drawable for progress mode-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/LL_top111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fragment
+                    android:id="@+id/received_order_fragment1"
+                    android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_ordertakenlistmenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_ordertakenlistmenu" />
+
+                <!--<Space-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/black"/>-->
+
+                <fragment
+                    android:id="@+id/sales_generated_fragement1"
+                    android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_paymentcollectedlistmenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/green_shade"
+                    tools:layout="@layout/fragment_paymentcollected" />
+                <!-- tools:layout="@layout/fragment_showallordermenu"-->
+            </LinearLayout>
+            <!--<Space-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:background="@android:color/black"/>-->
+            <LinearLayout
+
+                android:id="@+id/LL_top11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fragment
+                    android:id="@+id/sales_return_fragment1"
+                    android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_orderdeliveredlistmenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_orderdeliveredlistmenu" />
+
+                <!--<Space-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/black"/>-->
+
+                <fragment
+                    android:id="@+id/pending_bills_distributor_fragment1"
+                    android:name="com.synergy.keimed_ordergenie.fragment.Dashboard_distr_orderreturnedlistmenuFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    tools:layout="@layout/fragment_orderreturned" />
+                <!-- tools:layout="@layout/fragment_showallordermenu"-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

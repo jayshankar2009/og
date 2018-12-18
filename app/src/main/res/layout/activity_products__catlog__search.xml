@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.synergy.keimed_ordergenie.activity.Products_Catlog_Search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout11"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_green">
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <RadioButton
+
+                    android:id="@+id/rd_searchproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:paddingRight="10dp"
+                    android:checked="true"
+                    android:text="Product Name" />
+
+                <RadioButton
+                    android:id="@+id/rd_searchmanu_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingRight="10dp"
+                    android:text="Manufactural Name" />
+
+                <RadioButton
+                    android:id="@+id/rb_flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingRight="10dp"
+                    android:text="Molecules"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltSearch"
+            android:layout_width="match_parent"
+android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchview_pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="#ffffff"
+                android:padding="5dp">
+            </android.support.v7.widget.SearchView>
+
+            <android.support.v7.widget.SearchView
+                android:visibility="gone"
+                android:id="@+id/searchview_mname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="#ffffff"
+                android:padding="5dp">
+            </android.support.v7.widget.SearchView>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_productdatalist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            tools:listitem="@android:layout/simple_list_item_2"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chemist_product_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.synergy.keimed_ordergenie.activity.ActivityChemistProductSearch">
+
+
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_orderlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_product_count"
+        android:layout_gravity="center_horizontal"
+        tools:listitem="@android:layout/simple_list_item_2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/genie"
+        android:textSize="@dimen/Normal"
+        android:id="@+id/txt_no_product"
+       android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorAccent"
+        android:text="No Product Available !"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:text="0 Result"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txt_product_count"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="v_Productlist"
+            type="com.synergy.keimed_ordergenie.model.m_Product_list"/>
+    </data>
+
+
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:id="@+id/relativeLayout"-->
+    <!--android:background="@drawable/main_linerlayout_border"-->
+    <!--android:paddingTop="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingBottom="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingLeft="8dp"-->
+    <!--android:paddingRight="8dp">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/productName"-->
+        <!--android:textSize="@dimen/Subnormal"-->
+        <!--tools:text="Product Name"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:alpha=".8" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/Stock"-->
+        <!--android:textSize="@dimen/Subnormal"-->
+        <!--tools:text="16378"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:alpha=".8" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:id="@+id/productStatus"-->
+        <!--android:textSize="@dimen/small"-->
+        <!--tools:text="InStock"-->
+        <!--android:background="@drawable/circular_textview_drawable"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginEnd="25dp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_alignParentTop="false"-->
+        <!--android:layout_toStartOf="@+id/Stock"-->
+        <!--android:gravity="center"-->
+        <!--android:alpha=".8"-->
+        <!--android:layout_marginTop="3dp" />-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_linerlayout_border"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".6"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/Subnormal"
+            tools:text="Product Name" />
+
+
+        <TextView
+            android:id="@+id/productStatus"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".1"
+            android:background="@drawable/circular_textview_drawable"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/Roboto_thin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small"
+            tools:text="Stock" />
+
+        <TextView
+            android:id="@+id/Stock"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/pro_scheme"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:text="Scheme:NA"/>
+
+</LinearLayout>
+</layout>

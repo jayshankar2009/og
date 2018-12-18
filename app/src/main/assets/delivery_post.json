@@ -1,0 +1,24 @@
+[ 
+{ 
+"StockistID":1,
+"Delivery_doc_no":"AB-1001",
+"ErpchemistID":1001,
+"Package_count":"5",
+"DeliveryStatus":0,
+"ErpsalesmanID":121,
+"Delivery_date":"2018-05-30",
+"Order_Image":"hdgajhsgdjhas",
+"Sign_Image": "aaaa",
+"Latitude": "12",
+"Longitude": "10",
+"Description":"hgfjsj",
+"Invoices" : [{ 
+"Invoice_no": "OGIN011609000029"
+},{ 
+"Invoice_no": "OGIN011609000030"
+}]
+}
+]
+
+
+

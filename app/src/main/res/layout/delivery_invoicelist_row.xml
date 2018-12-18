@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/layout_checkbox"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVOICE NO:1926"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:text="24 NOV,2017"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                android:id="@+id/text_invoice_amt"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="Rs.500"/>
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/ruppees_textview"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/_10sdp" />-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abc"
+                    android:id="@+id/txt_status"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textview_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:drawablePadding="@dimen/_4sdp"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:gravity="left"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/_10sdp" />-->
+
+                <ImageView
+                    android:id="@+id/billStatus"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@color/colorAccent"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/ruppees_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ruppees_textview"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_red"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="No of  Boxes"
+                android:textAppearance="@style/TextViewCustomFont"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/mini" />
+
+            <TextView
+                android:id="@+id/tx_no_of_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="0"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="No of Items: "
+                android:textAppearance="@style/TextViewCustomFont"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/mini" />
+
+            <TextView
+                android:id="@+id/tx_no_of_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="0"
+                android:textAppearance="@style/Roboto_thin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="No of Packets"
+                android:textAppearance="@style/TextViewCustomFont"
+                android:textColor="@color/button_grey"
+                android:textSize="@dimen/mini" />
+
+            <TextView
+                android:id="@+id/tx_no_of_packets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="0"
+                android:textAppearance="@style/Roboto_thin"
+                android:textSize="@dimen/small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
